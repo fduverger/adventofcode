@@ -4,15 +4,15 @@ import (
 	"testing"
 )
 
-func TestSumOfAllDigitsThatMatchNext(t *testing.T) {
+func TestInverseCaptcha(t *testing.T) {
 	for _, tc := range addCases {
 		in := tc.in
 		want := tc.want
-		got := SumOfAllDigitsThatMatchNext(in)
+		got := InverseCaptcha(in)
 
 		if got != want {
 			t.Errorf(`FAIL: %s
-SumOfAllDigitsThatMatchNext(%s)
+InverseCaptcha(%s)
 = %d
 want %d`, tc.description, tc.in, got, tc.want)
 		}

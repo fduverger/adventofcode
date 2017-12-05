@@ -1,7 +1,7 @@
 package inversecaptcha
 
 //SumOfAllDigitsThatMatchNext sum sequence of consecutive numbers
-func SumOfAllDigitsThatMatchNext(sequence string) int {
+func InverseCaptcha(sequence string) int {
 	if len(sequence) < 2 {
 		return 0
 	}
